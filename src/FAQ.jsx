@@ -30,6 +30,8 @@ function FAQ(props) {
             ? "FAQContainer-List-Btn rotated-btn"
             : "FAQContainer-List-Btn"
         }
+        id={"btn" + props.id}
+        aria-label="question"
         onClick={handleClick}
       >
         <img src={ArrowImg} alt="" />
@@ -41,6 +43,7 @@ function FAQ(props) {
 FAQ.propTypes = {
   question: PropTypes.string,
   answer: PropTypes.string,
+  id: PropTypes.number,
 };
 
 export default FAQ;

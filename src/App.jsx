@@ -11,7 +11,7 @@ function App() {
         <h1 className="FAQContainer-Title">faq</h1>
         <ul className="FAQContainer-List">
           {data.map((el, i) => (
-            <FAQ key={i} question={el.question} answer={el.answer} />
+            <FAQ key={i} id={i} question={el.question} answer={el.answer} />
           ))}
         </ul>
       </div>
